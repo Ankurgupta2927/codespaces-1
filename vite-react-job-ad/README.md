@@ -1,8 +1,11 @@
-# React + Vite
+Job Advertisement Poster Generator
+This project is a web application that allows users to generate job advertisement posters in PDF format based on selected templates. It uses React for the frontend and integrates with jsPDF and html2canvas for PDF generation from HTML templates.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
+Choose from multiple job advertisement poster templates.
+Fill in job details such as domain, experience, job description, company name, and contact details.
+Generate a downloadable PDF poster based on the chosen template.
+Technologies Used
+Frontend: React.js, HTML, CSS
+PDF Generation: jsPDF, html2canvas
+Styling: CSS Modules

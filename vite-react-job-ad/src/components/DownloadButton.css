@@ -1,0 +1,22 @@
+/* DownloadButton.css */
+.responsiveButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Adjustments for tablets */
+@media (max-width: 768px) {
+    .responsiveButton {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Adjustments for mobile phones */
+@media (max-width: 480px) {
+    .responsiveButton {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,37 @@
+.poster {
+    max-width: 100%; /* Ensure the poster fits within the div */
+    width: 100%; /* Make width responsive */
+    margin: 20px auto;
+    padding: 5%; /* Use percentage for responsive padding */
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    display: flex; /* Use flexbox for better content fitting */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Adjustments for larger screens where a fixed width is more appropriate */
+@media (min-width: 768px) {
+    .poster {
+        width: 600px; /* Fixed width for larger screens */
+        padding: 20px; /* Fixed padding for larger screens */
+    }
+}
+
+/* Adjustments for tablets */
+@media (max-width: 768px) {
+    .poster {
+        width: 80%; /* Adjust width to be 80% of the container */
+        padding: 15px; /* Slightly reduce padding */
+    }
+}
+
+/* Adjustments for mobile phones */
+@media (max-width: 480px) {
+    .poster {
+        width: 90%; /* Adjust width to be 90% of the container */
+        padding: 10px; /* Further reduce padding for smaller screens */
+    }
+}

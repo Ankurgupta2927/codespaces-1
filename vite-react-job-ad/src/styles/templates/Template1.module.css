@@ -1,0 +1,102 @@
+/* Template1.module.css */
+.template1 {
+    border: 2px solid #3498db;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px;
+}
+@media (max-width: 498px) {
+    .posterContainer {
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 600px;
+        margin: 20px auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 498px) {
+    .posterContainer {
+        padding: 10px; /* Reduce padding */
+        margin: 10px auto; /* Adjust margin for smaller screens */
+        max-width: 100%; /* Allow it to expand to the full width of its container */
+    }
+
+    .poster {
+        flex-direction: column; /* Stack child elements vertically */
+    }
+
+    /* Adjustments for left and right sections for smaller screens */
+    .leftSection, .rightSection {
+        margin: 5px 0; /* Reduce margin between sections */
+        padding: 10px; /* Adjust padding for a tighter layout */
+    }
+}
+
+.poster {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.leftSection, .rightSection {
+    flex: 1;
+    padding: 20px;
+}
+
+.leftSection {
+    background-color: #fff;
+}
+
+.rightSection {
+    background-color: #1612e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.leftSection h1 {
+    color: #1612e2;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.leftSection h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.leftSection p {
+    margin: 5px 0;
+}
+
+.vacancy {
+    position: relative;
+}
+
+.chairImage {
+    width: 150px;
+    height: 150px;
+}
+
+.vacancyTag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    color: #e53935;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    transform: rotate(15deg);
+    transform-origin: top right;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
